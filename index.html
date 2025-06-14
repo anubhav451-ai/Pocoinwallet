@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PO Coin Wallet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wallet">
+        <h1>PO Coin Wallet</h1>
+        <p>Balance: <span id="balance">1000</span> PO</p>
+        <button onclick="showQR()">Receive</button>
+        <button onclick="sendCoin()">Send</button>
+        <div id="qrSection" style="display:none;">
+            <p>Your QR Code:</p>
+            <img src="https://api.qrserver.com/v1/create-qr-code/?data=user123&size=150x150" alt="QR Code">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
